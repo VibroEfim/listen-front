@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  background-color: black;
+}
+
+a {
+  color: "gray",
+}
+
+a:hover a {
+  color: "white",
+}
+

@@ -1,0 +1,52 @@
+.body {
+  overflow: hidden;
+}
+
+.clickable {
+  transition: color 0.15s ease;
+  color: gray;
+}
+
+.clickable:hover {
+  color: white;
+}
+
+.volumeSlider {
+  display: none;
+  transition: opacity 0.15s ease;
+  opacity: 0;
+}
+
+.volumeHandler:hover .volumeSlider {
+  display: flex;
+  transition: opacity 0.15s ease;
+  opacity: 1;
+}
+
+.notification {
+  display: none;
+  opacity: 0;
+}
+
+.enabled {
+  display: flex;
+  opacity: 1;
+  animation: notification_enable 0.5s forwards;
+}
+
+.scrollContainer {
+  overflow: visible;
+  scrollbar-width: thin;
+  scrollbar-color: gray;
+}
+
+@keyframes notification_enable {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
