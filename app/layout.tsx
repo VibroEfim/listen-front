@@ -61,7 +61,9 @@ export default function RootLayout({
           <Grid item md={2} bgcolor={"#212121"}>
             <Sidebar user={user} />
           </Grid>
-          <Grid item md={10} bgcolor={"#171717"}>
+          <Grid item md={10} bgcolor={"#171717"} maxHeight={"100vh"} sx={{
+            overflowY: "auto"
+          }}>
             {children}
           </Grid>
         </Grid>
